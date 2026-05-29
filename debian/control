@@ -1,0 +1,29 @@
+Source: pydantic-core
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-pip,
+Standards-Version: 4.7.0
+Homepage: https://github.com/pydantic/pydantic-core
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/Vitexus/pydantic-core.git
+Vcs-Browser: https://github.com/Vitexus/pydantic-core
+
+Package: python3-pydantic-core
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-typing-extensions (>= 4.14.1),
+Breaks: python3-pydantic (<< 2.46.0)
+Description: Core validation logic for Pydantic (Rust-compiled extension)
+ pydantic-core provides the high-performance Rust-compiled validation
+ and serialization engine that powers Pydantic v2.
+ .
+ This package ships the prebuilt wheel for the current platform and
+ Python version, as the Rust toolchain required to compile from source
+ (rustc >= 1.88) is not available in the standard Debian build infrastructure.

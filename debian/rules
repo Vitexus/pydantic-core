@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+PKGVER := $(shell dpkg-parsechangelog -S Version | sed 's/-[^-]*$$//')
+
+%:
+	dh $@ --with python3
+
+override_dh_auto_build:
+	pip3 download --no-deps "pydantic-core==$(PKGVER)" -d /tmp/pydantic-core-wheel
+	python3 -m zipfile -e $$(ls /tmp/pydantic-core-wheel/pydantic_core-$(PKGVER)-*.whl | head -1) /tmp/pydantic-core-src/
+
+override_dh_auto_install:
+	install -d debian/python3-pydantic-core/usr/lib/python3/dist-packages/
+	cp -r /tmp/pydantic-core-src/pydantic_core debian/python3-pydantic-core/usr/lib/python3/dist-packages/
+
+override_dh_auto_test:
+	# Skip tests
+
+override_dh_auto_clean:
+	rm -rf /tmp/pydantic-core-wheel /tmp/pydantic-core-src || true

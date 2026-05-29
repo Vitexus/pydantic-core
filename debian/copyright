@@ -1,0 +1,309 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pydantic-core
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .cargo/config.toml
+           .codecov.yml
+           .github/actions/build-pgo-wheel/action.yml
+           .github/check_version.py
+           .github/workflows/ci.yml
+           .github/workflows/codspeed.yml
+           .gitignore
+           .mypy-stubtest-allowlist
+           .pre-commit-config.yaml
+           .rustfmt.toml
+           Cargo.lock
+           Cargo.toml
+           Makefile
+           README.md
+           benches/main.rs
+           build.rs
+           package.json
+           pyproject.toml
+           python/pydantic_core/__init__.py
+           python/pydantic_core/_pydantic_core.pyi
+           python/pydantic_core/core_schema.py
+           python/pydantic_core/py.typed
+           src/argument_markers.rs
+           src/build_tools.rs
+           src/common/missing_sentinel.rs
+           src/common/mod.rs
+           src/common/prebuilt.rs
+           src/common/union.rs
+           src/definitions.rs
+           src/errors/line_error.rs
+           src/errors/location.rs
+           src/errors/mod.rs
+           src/errors/types.rs
+           src/errors/validation_exception.rs
+           src/errors/value_exception.rs
+           src/input/datetime.rs
+           src/input/input_abstract.rs
+           src/input/input_json.rs
+           src/input/input_python.rs
+           src/input/input_string.rs
+           src/input/mod.rs
+           src/input/return_enums.rs
+           src/input/shared.rs
+           src/lib.rs
+           src/lookup_key.rs
+           src/py_gc.rs
+           src/recursion_guard.rs
+           src/self_schema.py
+           src/serializers/computed_fields.rs
+           src/serializers/config.rs
+           src/serializers/errors.rs
+           src/serializers/extra.rs
+           src/serializers/fields.rs
+           src/serializers/filter.rs
+           src/serializers/infer.rs
+           src/serializers/mod.rs
+           src/serializers/ob_type.rs
+           src/serializers/prebuilt.rs
+           src/serializers/ser.rs
+           src/serializers/shared.rs
+           src/serializers/type_serializers/any.rs
+           src/serializers/type_serializers/bytes.rs
+           src/serializers/type_serializers/complex.rs
+           src/serializers/type_serializers/dataclass.rs
+           src/serializers/type_serializers/datetime_etc.rs
+           src/serializers/type_serializers/decimal.rs
+           src/serializers/type_serializers/definitions.rs
+           src/serializers/type_serializers/dict.rs
+           src/serializers/type_serializers/enum_.rs
+           src/serializers/type_serializers/float.rs
+           src/serializers/type_serializers/format.rs
+           src/serializers/type_serializers/function.rs
+           src/serializers/type_serializers/generator.rs
+           src/serializers/type_serializers/json.rs
+           src/serializers/type_serializers/json_or_python.rs
+           src/serializers/type_serializers/list.rs
+           src/serializers/type_serializers/literal.rs
+           src/serializers/type_serializers/missing_sentinel.rs
+           src/serializers/type_serializers/mod.rs
+           src/serializers/type_serializers/model.rs
+           src/serializers/type_serializers/nullable.rs
+           src/serializers/type_serializers/other.rs
+           src/serializers/type_serializers/set_frozenset.rs
+           src/serializers/type_serializers/simple.rs
+           src/serializers/type_serializers/string.rs
+           src/serializers/type_serializers/timedelta.rs
+           src/serializers/type_serializers/tuple.rs
+           src/serializers/type_serializers/typed_dict.rs
+           src/serializers/type_serializers/union.rs
+           src/serializers/type_serializers/url.rs
+           src/serializers/type_serializers/uuid.rs
+           src/serializers/type_serializers/with_default.rs
+           src/tools.rs
+           src/url.rs
+           src/validators/any.rs
+           src/validators/arguments.rs
+           src/validators/arguments_v3.rs
+           src/validators/bool.rs
+           src/validators/bytes.rs
+           src/validators/call.rs
+           src/validators/callable.rs
+           src/validators/chain.rs
+           src/validators/complex.rs
+           src/validators/config.rs
+           src/validators/custom_error.rs
+           src/validators/dataclass.rs
+           src/validators/date.rs
+           src/validators/datetime.rs
+           src/validators/decimal.rs
+           src/validators/definitions.rs
+           src/validators/dict.rs
+           src/validators/enum_.rs
+           src/validators/float.rs
+           src/validators/frozenset.rs
+           src/validators/function.rs
+           src/validators/generator.rs
+           src/validators/int.rs
+           src/validators/is_instance.rs
+           src/validators/is_subclass.rs
+           src/validators/json.rs
+           src/validators/json_or_python.rs
+           src/validators/lax_or_strict.rs
+           src/validators/list.rs
+           src/validators/literal.rs
+           src/validators/missing_sentinel.rs
+           src/validators/mod.rs
+           src/validators/model.rs
+           src/validators/model_fields.rs
+           src/validators/none.rs
+           src/validators/nullable.rs
+           src/validators/prebuilt.rs
+           src/validators/set.rs
+           src/validators/string.rs
+           src/validators/time.rs
+           src/validators/timedelta.rs
+           src/validators/tuple.rs
+           src/validators/typed_dict.rs
+           src/validators/union.rs
+           src/validators/url.rs
+           src/validators/uuid.rs
+           src/validators/validation_state.rs
+           src/validators/with_default.rs
+           tests/__init__.py
+           tests/benchmarks/__init__.py
+           tests/benchmarks/complete_schema.py
+           tests/benchmarks/nested_schema.py
+           tests/benchmarks/test_complete_benchmark.py
+           tests/benchmarks/test_micro_benchmarks.py
+           tests/benchmarks/test_nested_benchmark.py
+           tests/benchmarks/test_serialization_micro.py
+           tests/conftest.py
+           tests/emscripten_runner.js
+           tests/serializers/__init__.py
+           tests/serializers/test_any.py
+           tests/serializers/test_bytes.py
+           tests/serializers/test_complex.py
+           tests/serializers/test_dataclasses.py
+           tests/serializers/test_datetime.py
+           tests/serializers/test_decimal.py
+           tests/serializers/test_definitions.py
+           tests/serializers/test_definitions_recursive.py
+           tests/serializers/test_dict.py
+           tests/serializers/test_enum.py
+           tests/serializers/test_format.py
+           tests/serializers/test_functions.py
+           tests/serializers/test_generator.py
+           tests/serializers/test_infer.py
+           tests/serializers/test_json.py
+           tests/serializers/test_json_or_python.py
+           tests/serializers/test_list_tuple.py
+           tests/serializers/test_literal.py
+           tests/serializers/test_model.py
+           tests/serializers/test_model_root.py
+           tests/serializers/test_none.py
+           tests/serializers/test_nullable.py
+           tests/serializers/test_other.py
+           tests/serializers/test_pickling.py
+           tests/serializers/test_serialize_as_any.py
+           tests/serializers/test_set_frozenset.py
+           tests/serializers/test_simple.py
+           tests/serializers/test_string.py
+           tests/serializers/test_timedelta.py
+           tests/serializers/test_typed_dict.py
+           tests/serializers/test_union.py
+           tests/serializers/test_url.py
+           tests/serializers/test_uuid.py
+           tests/test.rs
+           tests/test_build.py
+           tests/test_config.py
+           tests/test_custom_errors.py
+           tests/test_docstrings.py
+           tests/test_errors.py
+           tests/test_garbage_collection.py
+           tests/test_hypothesis.py
+           tests/test_isinstance.py
+           tests/test_json.py
+           tests/test_misc.py
+           tests/test_prebuilt.py
+           tests/test_schema_functions.py
+           tests/test_strict.py
+           tests/test_typing.py
+           tests/test_tzinfo.py
+           tests/test_validate_strings.py
+           tests/test_validation_context.py
+           tests/validators/__init__.py
+           tests/validators/arguments_v3/__init__.py
+           tests/validators/arguments_v3/test_alias.py
+           tests/validators/arguments_v3/test_build_errors.py
+           tests/validators/arguments_v3/test_extra.py
+           tests/validators/arguments_v3/test_general.py
+           tests/validators/arguments_v3/test_keyword_only.py
+           tests/validators/arguments_v3/test_positional_only.py
+           tests/validators/arguments_v3/test_positional_or_keyword.py
+           tests/validators/arguments_v3/test_var_args.py
+           tests/validators/arguments_v3/test_var_kwargs_uniform.py
+           tests/validators/arguments_v3/test_var_kwargs_unpacked_typed_dict.py
+           tests/validators/test_allow_partial.py
+           tests/validators/test_arguments.py
+           tests/validators/test_bool.py
+           tests/validators/test_bytes.py
+           tests/validators/test_call.py
+           tests/validators/test_callable.py
+           tests/validators/test_chain.py
+           tests/validators/test_complex.py
+           tests/validators/test_custom_error.py
+           tests/validators/test_dataclasses.py
+           tests/validators/test_date.py
+           tests/validators/test_datetime.py
+           tests/validators/test_decimal.py
+           tests/validators/test_definitions.py
+           tests/validators/test_definitions_recursive.py
+           tests/validators/test_dict.py
+           tests/validators/test_enums.py
+           tests/validators/test_float.py
+           tests/validators/test_frozenset.py
+           tests/validators/test_function.py
+           tests/validators/test_generator.py
+           tests/validators/test_int.py
+           tests/validators/test_is_instance.py
+           tests/validators/test_is_subclass.py
+           tests/validators/test_json.py
+           tests/validators/test_json_or_python.py
+           tests/validators/test_lax_or_strict.py
+           tests/validators/test_list.py
+           tests/validators/test_literal.py
+           tests/validators/test_model.py
+           tests/validators/test_model_fields.py
+           tests/validators/test_model_init.py
+           tests/validators/test_model_root.py
+           tests/validators/test_none.py
+           tests/validators/test_nullable.py
+           tests/validators/test_pickling.py
+           tests/validators/test_set.py
+           tests/validators/test_string.py
+           tests/validators/test_tagged_union.py
+           tests/validators/test_time.py
+           tests/validators/test_timedelta.py
+           tests/validators/test_tuple.py
+           tests/validators/test_typed_dict.py
+           tests/validators/test_union.py
+           tests/validators/test_url.py
+           tests/validators/test_uuid.py
+           tests/validators/test_with_default.py
+           uv.lock
+           wasm-preview/README.md
+           wasm-preview/run_tests.py
+           wasm-preview/worker.js
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         wasm-preview/index.html
+#         .github/PULL_REQUEST_TEMPLATE.md
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE
+ The MIT License (MIT)
+ .
+ Copyright (c) 2022 Samuel Colvin
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
