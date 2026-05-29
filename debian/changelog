@@ -1,5 +1,6 @@
-pydantic-core (2.46.3) UNRELEASED; urgency=low
+pydantic-core (2.46.0) UNRELEASED; urgency=low
 
   * Initial Debian packaging (wheel-based, Rust-compiled extension)
+  * Version matches exact requirement of python3-pydantic 2.13.3
 
  -- Vítězslav Dvořák <info@vitexsoftware.cz>  Fri, 29 May 2026 13:04:20 +0200
