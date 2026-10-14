@@ -47,6 +47,9 @@ distributions.each { distro ->
         node {
             ansiColor('xterm') {
                 stage('Checkout ' + distroName) {
+                    // The first branch shares the SCM checkout workspace; its
+                    // read-only .git pack files make unstash fail without this.
+                    deleteDir()
                     unstash 'src'
                     buildImage = docker.image(vendor + '/' + distro)
                     sh 'git checkout debian/changelog'
