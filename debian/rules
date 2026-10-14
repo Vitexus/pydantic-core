@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
-PKGVER := $(shell dpkg-parsechangelog -S Version | sed 's/-[^-]*$$//')
+# Upstream X.Y.Z only: Jenkins appends ".<build>~<distro>" to the changelog version
+PKGVER := $(shell dpkg-parsechangelog -S Version | sed -E 's/^([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
 
 %:
 	dh $@ --with python3
