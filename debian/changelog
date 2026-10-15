@@ -1,3 +1,10 @@
+pydantic-core (2.50.1) UNRELEASED; urgency=medium
+
+  * New upstream release 2.50.1 (prebuilt PyPI wheel, as before).
+  * Version matches the exact requirement of python3-pydantic 2.14.1.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Thu, 15 Oct 2026 12:23:34 +0200
+
 pydantic-core (2.46.0) UNRELEASED; urgency=low
 
   * Initial Debian packaging (wheel-based, Rust-compiled extension)

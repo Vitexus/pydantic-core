@@ -19,7 +19,7 @@ Depends:
  ${misc:Depends},
  ${python3:Depends},
  python3-typing-extensions (>= 4.14.1),
-Breaks: python3-pydantic (<< 2.13.3)
+Breaks: python3-pydantic (<< 2.14.1)
 Description: Core validation logic for Pydantic (Rust-compiled extension)
  pydantic-core provides the high-performance Rust-compiled validation
  and serialization engine that powers Pydantic v2.
